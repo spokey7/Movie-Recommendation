@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif; /* Sets the font for the page */
+    background: url('back.jpg') no-repeat center center fixed; /* Adds background image with no-repeat, center positioning, and fixed scrolling */
+    background-size: cover; /* Ensures the background image covers the entire viewport */
+    text-align: center; /* Centers text within the body */
+    padding: 50px; /* Adds padding around the content */
+    margin: 0; /* Removes default margin */
+    color: black;
+}
+
+input {
+    padding: 10px;
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #2f9705;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4caf50;
+}
+
+.poster {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.poster img {
+    width: 150px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.loading {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loading::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #fff;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
